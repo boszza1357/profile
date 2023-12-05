@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>Lab</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./img/368604041_840485437510684_2113001665853681955_n.jpg">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styl.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: cnter;
+  background-size: cover;
+  background-image: url("img/368604041_840485437510684_2113001665853681955_n.jpg");
+  min-height: 180%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top ">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> index</a>
+      <a href="java.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> java</a>
+      <a href="api.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> api</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+
+
+
+
+
+
+
+
+
+
+<!-- Contact Section -->
+
+<div class="w3-container w3-light-grey r1 w3-animate-left card" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center w3-black w3-padding-large w3-padding-32">Code Camp AcademyLab</h3>
+  <p class="w3-center w3-large w3-red w3-padding-22">js13,js14,js16</p>
+  <div style="margin-top:150px">
+    <div class="conte">   
+      <h1> Just change A - Z</h1>
+      <button id="demoButton" >
+      <p id="demo"></p>
+    </button>
+      <h2>แปลงตัวอักษรตัวแรกของ str ให้เป็นตัวพิมพ์ใหญ่ส่วนตัวอักษรที่เหลือให้มีขนาดเหมือนเดิม</h2>
+      <p>
+        <label for="inputText">ก่อนแปลง: </label>
+        <input type="text" id="inputText">
+        <button onclick="showModifiedString()">แปลง</button>
+      </p>
+      <button class="button-one">
+      <p>หลังแปลง =  </p> 
+
+    <span id="modifiedString" class="output-box" >
+            <input type="text" id="modifiedString" >
+    </span>
+ </button>
+
+ <h2>กรุณาคลิกเพื่อแสดงข้อความ</h2>
+ <p>
+  
+   <button onclick="myFunction()">คลิก</button>
+ </p>
+ <button class="button-one">
+ <p id="demo2"></p>
+</button>
+<h2>กรณากรอกเลข</h2>
+  <label for="inputText">ตัวเลข: </label>
+  <input type="text" id="numb">
+  <button type="button" onclick="myFunction2()">ส่ง</button>
+  
+  <p id="demo3" class="button-two">
+    <span id="modifiedString" class="output-box" >
+      <input type="text" id="modifiedString" >
+</span>
+  </p>
+
+  <h2>คำนวณแต้มจากยอดซื้อขายโดยเฉพาะทุกยอดซื้อ 100 บาทจะได้ 1 แต้ม</h2>
+  <input type="text" id="inputTotalSales">
+  <button onclick="updatePoints()">คำนวณแต้ม</button>
+  <p>ยอดซื้อขาย:<span id="totalSalesDisplay" ></span> บาท</p>
+  <p>จำนวนแต้มที่ได้: <span id="loyaltyPointsDisplay"></span> แต้ม</p>
+
+    </div>
+    <!-- Image of location/map -->
+    <img src="img/20201015182625.jpg" class="w3-image w3-greyscale" style="width:120%;margin-top:120px">
+  </div>
+</div>
+
+<!-- Footer -->
+
+ 
+<script>
+
+setInterval(() => {
+    document.getElementById("demoButton").style.backgroundColor = getRandomColor();
+  }, 1000);
+
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+function printAlphabets() {
+    const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+    alphabets.split('').forEach((alphabet, index) => {
+      setTimeout(() => {
+        document.getElementById("demo").innerHTML = alphabet;
+      }, index * 1000);
+    });
+  }
+  printAlphabets();
+
+  function myFunction() {
+    document.getElementById("demo2").innerHTML = "Hello World";
+  }
+
+  function myFunction2() {
+  let x = document.getElementById("numb").value;
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo3").innerText = text;
+}
+
+  function ucFirst(str) {
+    if (!str) return str;
+    const modifiedStr = str.charAt(0).toUpperCase() + str.slice(1);
+    return modifiedStr;
+  }
+
+  function ucFirst(str) {
+    if (!str) return str;
+    const modifiedStr = str.charAt(0).toUpperCase() + str.slice(1);
+    return modifiedStr;
+  }
+  function showModifiedString() {
+    const inputText = document.getElementById("inputText").value;
+    const modifiedString = ucFirst(inputText);
+
+    document.getElementById("modifiedString").innerText = modifiedString;
+  }
+
+  function calculateLoyaltyPoints(totalSales) {
+    let points = totalSales / 100;
+    points = Math.floor(points);
+    return points;
+  }
+
+  function updatePoints() {
+  const newTotalSales = document.getElementById("inputTotalSales").value;
+  const newPoints = calculateLoyaltyPoints(parseInt(newTotalSales));
+
+  if (!isNaN(newPoints)) {
+    document.getElementById("totalSalesDisplay").innerText = newTotalSales;
+    document.getElementById("loyaltyPointsDisplay").innerText = newPoints;
+  } else {
+    // Handle the error case as needed
+    console.error("Invalid input. Please enter a valid number.");
+  }
+}
+
+
+
+document.getElementById("totalSalesDisplay").innerText = initialTotalSales;
+document.getElementById("loyaltyPointsDisplay").innerText = initialLoyaltyPoints;
+
+  function calculateCircleLength(radius) {
+    var PI = Math.PI;
+    var circleLength = PI * 2 * radius;
+    return circleLength;
+  }
+
+  function calculateCircleLength(radius) {
+    var PI = Math.PI;
+    var circleLength = PI * 2 * radius;
+    return circleLength;
+  }
+
+  function calculate() {
+    var radius = prompt("กรุณาใส่ค่ารัศมีของวงกลม:");
+
+    if (radius !== null && radius !== "") {
+      radius = parseInt(radius);
+
+      if (!isNaN(radius)) {
+        var length = calculateCircleLength(radius);
+        document.getElementById("result").innerText = "ความยาวเส้นรอบวงของวงกลมที่มีรัศมี " + radius + " คือ " + length;
+      } else {
+        alert("โปรดกรอกรัศมีของวงกลมให้ถูกต้อง");
+      }
+    }
+  }
+
+</script>
+
+</body>
+</html>
